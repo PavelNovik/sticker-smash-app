@@ -8,7 +8,6 @@ LogBox.ignoreAllLogs(true);
 export default function RootLayout() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
-      <StatusBar style="light" />
       <Stack >
         <Stack.Screen name="(tabs)"
           // options={{ title: 'Home' }}
@@ -16,6 +15,7 @@ export default function RootLayout() {
         />
         {/* <Stack.Screen name="not-found" options={{ headerShown: false }} /> */}
       </Stack>
+      <StatusBar style="light" />
     </GestureHandlerRootView>
   )
 }
